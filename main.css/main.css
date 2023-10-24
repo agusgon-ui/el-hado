@@ -74,10 +74,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .parrafos {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
     padding-bottom: 1rem;
     padding-top: 1rem;
+    align-items: center;
 }
 
 .parrafo {
@@ -104,6 +105,13 @@ h1, h2, h3, h4, h5, h6 {
     background-size: 354px 418px;
     background-position: center center;
     color: rgb(255, 255, 255);
+}
+
+.mapa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
 }
 
 .pie {
@@ -149,6 +157,24 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
+.carouel-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.slide  {
+
+    margin-top: 10px;
+    padding-bottom: 10px;
+    
+
+}
+
+.carousel {
+   width: 65vh;
+}
 
 @media (max-width: 900px) {
 
@@ -162,3 +188,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+@media (max-width: 740px) {
+
+.parrafos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.parrafo {
+    padding: 10px;
+}
+.parrafo2 {
+    padding: 10px;
+}
+
+}
+
+@media (max-width: 650px) {
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pie {
+        display: flex;
+        flex-direction: row;
+    }
+    .parrafos-largos {
+        font-size: 1.5rem;
+    } 
+}
