@@ -191,8 +191,8 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 740px) {
 
 .parrafos{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 12fr 12fr;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
