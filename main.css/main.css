@@ -8,6 +8,13 @@
 
 body {
     background-color: rgb(26, 25, 25);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex-grow: 1;
 }
 
 a {
@@ -66,6 +73,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu-link {
     font-weight: 800;
+}
+
+.menu-link.active {
+    color: dimgray;
 }
 
 .menu-link:hover {
@@ -137,9 +148,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .parrafos-largos {
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 1rem 2rem;
     border: 2px solid rgb(22, 22, 22);
+   
+}
+
+.exterior-nosotros {
+    display: flex;
+    justify-content: center;
+    width: auto;
 }
 
 .p-local {
@@ -155,6 +173,10 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
     
+}
+
+.link-ubicacion:hover {
+    background-color: rgb(54, 54, 54);
 }
 
 .carouel-container{
@@ -208,10 +230,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 650px) {
-    .menu {
-        display: flex;
-        flex-wrap: wrap;
-    }
+    
     .pie {
         display: flex;
         flex-direction: row;
