@@ -1,0 +1,97 @@
+body {
+    background-color: $colorprincipal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: $colortexto;
+}
+
+p {
+    font-family: 'Nanum Myeongjo', serif !important;
+    color: $colortexto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif !important;
+}
+
+.logo {
+    padding: 1rem 2rem;
+    color: $colortexto;
+    background-color: $colorprincipal;
+    text-align: center;
+}
+
+.logo-titulo{
+    font-weight: 1000;
+    font-size: 3rem;
+    text-align: center;
+    color: $colortexto;
+}
+
+.logo-slogan{
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-family: 'Merriweather', serif !important;
+    text-align: center;
+    color: $colortexto;
+}
+
+
+
+.menu {
+    color: $colortexto;
+    background-color: black;
+    height: 5rem;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    transition: 1s;
+
+    
+    
+
+    .menu-item {
+        display: flex;
+        font-size: 20px;
+       
+        
+    
+    
+        .menu-link {
+            font-weight: 800;
+            &:hover {
+            background-color: rgb(54, 54, 54);
+            transform: translate(15px, 15px);
+
+            }
+        
+            
+        }
+    
+        
+    }
+}
+
+.menu-link.active {
+    color: dimgray;
+}
+
+
+
+
+
+
+
+

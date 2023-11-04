@@ -1,0 +1,16 @@
+.pie {
+    font-family: 'Nanum Myeongjo', serif;
+    height: 3rem;
+    border-top: 5px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.links2 {
+    color: $colorlinkfooter;
+    
+}

@@ -1,0 +1,102 @@
+.main {
+    flex-grow: 1;
+}
+
+.parrafos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    align-items: center;
+}
+
+.parrafo {
+    padding: 2rem 2rem;
+    font-size: 2rem;
+    width: 354px;
+    height: 418px;
+    background-image: url(../images/exteriorElHado.jpg);
+    background-repeat: no-repeat;
+    background-size: 354px 418px;
+    background-position: center center;
+    color: $colortexto
+    
+    
+}
+
+.parrafo2 {
+    padding: 2rem 2rem;
+    font-size: 2rem;
+    width: 354px;
+    height: 418px;
+    background-image: url(../images/interiorElHado.jpg);
+    background-repeat: no-repeat;
+    background-size: 354px 418px;
+    background-position: center center;
+    color: $colortexto
+}
+
+.mapa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+
+.images {
+    display: flex;
+    size: 10rem;
+}
+
+.parrafos-largos {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border: 2px solid rgb(22, 22, 22);
+   
+}
+
+.exterior-nosotros {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.p-local {
+    padding: 1rem 2rem;
+}
+
+.contacto {
+    display: flex;
+    font-size: 1,5rem;
+}
+
+.contacto-items {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    
+}
+
+.link-ubicacion:hover {
+    background-color: rgb(54, 54, 54);
+}
+
+.carouel-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.slide  {
+
+    margin-top: 10px;
+    padding-bottom: 10px;
+    
+
+}
+
+.carousel {
+   width: 65vh;
+}
