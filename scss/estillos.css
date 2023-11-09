@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather", serif !important;
 }
 
+.header {
+  transition: 1s;
+}
+
 .logo {
   padding: 1rem 2rem;
   color: rgb(255, 255, 255);
@@ -58,6 +62,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 1rem;
   justify-content: space-around;
   font-size: 1.5rem;
+  transition-duration: all 1s;
 }
 .menu .menu-item {
   display: flex;
@@ -65,15 +70,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 .menu .menu-item .menu-link {
   font-weight: 800;
+  animation: iniciopag 1s;
 }
 .menu .menu-item .menu-link:hover {
-  background-color: rgb(54, 54, 54);
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: rgb(48, 48, 48);
+  transform: scale(1.5);
 }
 
 .menu-link.active {
   color: dimgray;
 }
 
+@keyframes iniciopag {
+  50% {
+    transform: scale(1.5);
+  }
+}
 .main {
   flex-grow: 1;
 }
@@ -85,9 +99,17 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 1rem;
   padding-top: 1rem;
   align-items: center;
+  transition: all 500ms;
 }
-
-.parrafo {
+.parrafos .parrafo-hover:hover {
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: rgb(48, 48, 48);
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.parrafos .parrafo {
+  animation: roll-in-left 0.6s ease-out both;
   padding: 2rem 2rem;
   font-size: 2rem;
   width: 354px;
@@ -98,8 +120,9 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center center;
   color: rgb(255, 255, 255);
 }
-
-.parrafo2 {
+.parrafos .parrafo2 {
+  animation: roll-in-left 0.6s ease-out both;
+  animation-delay: 250ms;
   padding: 2rem 2rem;
   font-size: 2rem;
   width: 354px;
@@ -123,6 +146,14 @@ h1, h2, h3, h4, h5, h6 {
   size: 10rem;
 }
 
+.img-sabores {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 65vh;
+  padding: 1rem;
+}
+
 .parrafos-largos {
   font-size: 2rem;
   padding: 1rem 2rem;
@@ -132,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 .exterior-nosotros {
   display: flex;
   justify-content: center;
-  width: auto;
+  height: 65vh;
 }
 
 .p-local {
@@ -141,12 +172,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .contacto {
   display: flex;
-  font-size: 1, 5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.35rem;
 }
 
 .contacto-items {
   display: grid;
-  grid-template-columns: 4fr 4fr 4fr;
+  grid-template-columns: 2fr 2fr 2fr;
 }
 
 .link-ubicacion:hover {
@@ -167,7 +200,16 @@ h1, h2, h3, h4, h5, h6 {
 .carousel {
   width: 65vh;
 }
-
+@keyframes roll-in-left {
+  0% {
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
 .pie {
   font-family: "Nanum Myeongjo", serif;
   height: 3rem;
@@ -189,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 4fr 4fr;
-    font-size: 1rem;
+    font-size: 0.3rem;
   }
 }
 @media (max-width: 740px) {
@@ -213,6 +255,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
   }
   .parrafos-largos {
-    font-size: 1.5rem;
+    font-size: 0.9rem;
+    justify-content: center;
   }
 }/*# sourceMappingURL=estillos.css.map */

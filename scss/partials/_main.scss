@@ -9,33 +9,60 @@
     padding-bottom: 1rem;
     padding-top: 1rem;
     align-items: center;
-}
+    transition: all 500ms;
 
-.parrafo {
-    padding: 2rem 2rem;
-    font-size: 2rem;
-    width: 354px;
-    height: 418px;
-    background-image: url(../images/exteriorElHado.jpg);
-    background-repeat: no-repeat;
-    background-size: 354px 418px;
-    background-position: center center;
-    color: $colortexto
+    .parrafo-hover{
+        &:hover {
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        background-color: rgb(48, 48, 48);
+        transform: scale(1.05);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+    }
+
+
+        .parrafo {
+            -webkit-animation:roll-in-left .6s ease-out both;
+            animation:roll-in-left .6s ease-out both;
+            padding: 2rem 2rem;
+            font-size: 2rem;
+            width: 354px;
+            height: 418px;
+            background-image: url(../images/exteriorElHado.jpg);
+            background-repeat: no-repeat;
+            background-size: 354px 418px;
+            background-position: center center;
+            color: $colortexto
+            
+        }
+
+        
+       
+    
+        
     
     
+        .parrafo2 {
+            -webkit-animation:roll-in-left .6s ease-out both;
+            animation:roll-in-left .6s ease-out both;
+            animation-delay: 250ms;
+            padding: 2rem 2rem;
+            font-size: 2rem;
+            width: 354px;
+            height: 418px;
+            background-image: url(../images/interiorElHado.jpg);
+            background-repeat: no-repeat;
+            background-size: 354px 418px;
+            background-position: center center;
+            color: $colortexto
+            
+        }
+    
+        
 }
 
-.parrafo2 {
-    padding: 2rem 2rem;
-    font-size: 2rem;
-    width: 354px;
-    height: 418px;
-    background-image: url(../images/interiorElHado.jpg);
-    background-repeat: no-repeat;
-    background-size: 354px 418px;
-    background-position: center center;
-    color: $colortexto
-}
 
 .mapa {
     display: flex;
@@ -50,6 +77,14 @@
     size: 10rem;
 }
 
+.img-sabores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 65vh;
+    padding: 1rem;
+}
+
 .parrafos-largos {
     font-size: 2rem;
     padding: 1rem 2rem;
@@ -60,7 +95,7 @@
 .exterior-nosotros {
     display: flex;
     justify-content: center;
-    width: auto;
+    height: 65vh;
 }
 
 .p-local {
@@ -69,12 +104,14 @@
 
 .contacto {
     display: flex;
-    font-size: 1,5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.35rem;
 }
 
 .contacto-items {
     display: grid;
-    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-columns: 2fr 2fr 2fr;
     
 }
 
@@ -100,3 +137,7 @@
 .carousel {
    width: 65vh;
 }
+
+.roll-in-left{}
+
+ @-webkit-keyframes roll-in-left{0%{-webkit-transform:translateX(-800px) rotate(-540deg);transform:translateX(-800px) rotate(-540deg);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);opacity:1}}@keyframes roll-in-left{0%{-webkit-transform:translateX(-800px) rotate(-540deg);transform:translateX(-800px) rotate(-540deg);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);opacity:1}}

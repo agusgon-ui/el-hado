@@ -23,6 +23,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif !important;
 }
 
+.header{
+    transition: 1s;
+}
+
 .logo {
     padding: 1rem 2rem;
     color: $colortexto;
@@ -57,7 +61,8 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1rem;
     justify-content: space-around;
     font-size: 1.5rem;
-    transition: 1s;
+    transition-duration: all 1s;
+    
 
     
     
@@ -65,15 +70,20 @@ h1, h2, h3, h4, h5, h6 {
     .menu-item {
         display: flex;
         font-size: 20px;
+
        
         
     
     
         .menu-link {
             font-weight: 800;
+            animation: iniciopag 1s;
+
             &:hover {
-            background-color: rgb(54, 54, 54);
-            transform: translate(15px, 15px);
+                transition-duration: 1s;
+                transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            background-color: rgb(48, 48, 48);
+            transform: scale(1.5);
 
             }
         
@@ -88,6 +98,11 @@ h1, h2, h3, h4, h5, h6 {
     color: dimgray;
 }
 
+@keyframes iniciopag {
+    50% {
+        transform: scale(1.5);
+    }
+}
 
 
 
