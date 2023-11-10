@@ -1,3 +1,9 @@
+@media (max-width: 1074px) {
+    .exterior-nosotros {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 900px) {
 
     .contacto-items {
@@ -10,6 +16,26 @@
     }  
     }
     
+    @media (max-width: 820px) {
+        .exterior-nosotros {
+            flex-wrap: wrap;
+            padding: 1rem;
+        }
+
+        .img-nosotros {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 0;
+            justify-content: space-around;
+        }
+
+        .img-nosotros-2 {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-right: 0;
+            justify-content: space-around;
+        }
+    }
     
     @media (max-width: 740px) {
     

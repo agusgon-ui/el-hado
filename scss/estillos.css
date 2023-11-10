@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 65vh;
+  height: auto;
   padding: 1rem;
 }
 
@@ -162,9 +162,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .exterior-nosotros {
+  font-size: 1.5rem;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  height: 65vh;
+  width: auto;
+  padding: 1rem;
+  align-items: center;
+}
+.exterior-nosotros .img-nosotros {
+  width: 100vh;
+  padding-left: 16px;
+}
+.exterior-nosotros .img-nosotros-2 {
+  width: 80vh;
+  padding-right: 16px;
 }
 
 .p-local {
@@ -225,14 +237,38 @@ h1, h2, h3, h4, h5, h6 {
 
 .links2 {
   color: rgb(251, 243, 233);
+  padding-bottom: 1rem;
 }
 
+@media (max-width: 1074px) {
+  .exterior-nosotros {
+    font-size: 1rem;
+  }
+}
 @media (max-width: 900px) {
   .contacto-items {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 4fr 4fr;
     font-size: 0.3rem;
+  }
+}
+@media (max-width: 820px) {
+  .exterior-nosotros {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  .img-nosotros {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0;
+    justify-content: space-around;
+  }
+  .img-nosotros-2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 0;
+    justify-content: space-around;
   }
 }
 @media (max-width: 740px) {
